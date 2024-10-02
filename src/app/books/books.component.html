@@ -1,0 +1,9 @@
+<div class="books-list">
+  <h2>Lista de Livros</h2>
+  <ul>
+    <li *ngFor="let book of books">
+      <strong>{{ book.title }}</strong> - {{ book.author }} ({{ book.year }})
+      <button (click)="deleteBook(book.id)">Deletar</button>
+    </li>
+  </ul>
+</div>
